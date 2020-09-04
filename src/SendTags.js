@@ -61,7 +61,7 @@ export default function SendTags (props) {
                case "OR":
                   return matchOR( recipient, matchList );
                default:
-                   return;
+                   return undefined;
            }
        })
        .filter( recipient => recipient !== undefined );
